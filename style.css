@@ -43,6 +43,9 @@ li > a {
   padding: 8px 8px 8px 32px;
   align-items: center;
   gap: 32px;
+  /* width: 100vw; */
+  margin: 10px 0px;
+  flex-wrap: wrap;
 }
 
 .custom-search {
@@ -136,4 +139,127 @@ li > a {
   flex-direction: column;
   align-items: center;
   gap: 96px;
+}
+
+.inspiration {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.inspiration > h1 {
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.city-card {
+  border-radius: 8px;
+  overflow: hidden;
+  /* width: 21vw; */
+}
+
+.city-content {
+  background-color: #cc2d4a;
+  display: flex;
+  padding: 24px 16px 96px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  color: white;
+}
+.city-content > h1 {
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+}
+.city-content > h3 {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  height: auto;
+}
+.experiences-img {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.img1 {
+  background: url(https://s3-alpha-sig.figma.com/img/3679/a298/196b41cd98272a64e19b9681beb746f0?Expires=1698019200&Signature=MCXwx~F4IIg4LyQa9RU2-iUcPuxoGJr7YXTdLhftlpsDTBv8N-8tUKVvfl8C1zXpXiHkXwLaZFDS0SbfzTYubfzpfFMICHB-2W1xdlwZ5MPf~-u6aSRrjosfqWHPPUzTJtAQ4HfUqysQV~PKbQEK~U-3QSFWhgouZUb9vicaUVFIDcSuXAA2bnGPGIYfc2LcBrtMESl~UJun7ODisnZIMB78hXHentT4iS8-mSF4tYF6NuWj3hjXHERpt5B9mmOk5G688LRx9GMfqyDL148N-vTB3CLUScJYek~nlhgCy1uXMK1gcXOx4QG4TGy9gWko~rA1UIMxjc~nfp7~szol1w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 628px;
+  width: 43vw;
+  border-radius: 8px;
+}
+
+.experiences-img-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+  gap: 24px;
+}
+
+.experiences-img-content > h1 {
+  color: #fff;
+  width: 290px;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.experiences-button {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.experiences-button > h1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: #374151;
+  margin: 0;
+}
+
+.img2 {
+  background: url(https://s3-alpha-sig.figma.com/img/7894/1428/a63173a16c7efe522cab3d32fa5975ee?Expires=1698019200&Signature=j17WpfcJjW5jatPvRA49OUl2dki7ItuP1vcXOr4c-5GVA082UT1NjVQC9wbuWeYYmbz4a3zROG~CqBN8v7nHti7-SsM0s~zJ3QvSWcvXiHWITql2peaASq9K1tdK3ZDzEi226X0QKrTvmcv1VMtWMAtaJ98Q~~2xs9QDR1u3Xswm3XSu1C6~YEcx6wX3bE5BY7BmXCuoP9roOJqFxhgbb48wvCRHOov5PGI05JoIE-w3mBn5HDnJBcL2gDersbfYrkQ31~7ncdyRKhRBm2kIl6Lz92XfpVRJUP31ZjXGvpJaowazLyd2oCqG3jppbNSTT6KdlIH1Uttieyq-KX-M4Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 628px;
+  width: 43vw;
+  border-radius: 8px;
 }

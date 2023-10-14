@@ -29,7 +29,14 @@
   </head>
   <body>
     <section
-      style="background-color: black; padding-left: 80px; padding-right: 80px"
+      style="
+        background-color: black;
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
       class="section-1"
     >
       <nav class="navbar navbar-expand-lg" style="padding-top: 16px">
@@ -140,50 +147,58 @@
         </div>
       </nav>
 
-      <div style="display: flex; justify-content: center; padding: 20px 0px">
-        <div class="search-section">
-          <div id="location-input search-item" style="padding: 5px">
-            <div class="search-text">Location</div>
-            <input
-              style="border: none; outline: none"
-              type="text"
-              id="location"
-              placeholder="Where are you going?"
-            />
-          </div>
-          <div class="vertical-line" style="padding: 0"></div>
-          <div id="checkin-input search-item">
-            <div class="search-text">Check in</div>
-            <input
-              style="border: none; outline: none"
-              type="text"
-              id="checkin"
-              placeholder="Add dates"
-            />
-          </div>
-          <div class="vertical-line" style="padding: 0"></div>
-          <div id="checkout-input search-item">
-            <div class="search-text">Check out</div>
-            <input
-              style="border: none; outline: none"
-              type="text"
-              id="checkout"
-              placeholder="Add dates"
-            />
-          </div>
-          <div class="vertical-line" style="padding: 0"></div>
-          <div id="guests-input search-item">
-            <div class="search-text">Guests</div>
-            <input
-              style="border: none; outline: none"
-              type="text"
-              id="guests"
-              placeholder="Add guests"
-            />
-          </div>
-          <div class="material-icons custom-search">search</div>
+      <!-- <div
+        style="
+          display: flex;
+          justify-content: center;
+          position: relative;
+          padding: 20px 0px;
+          flex-direction: row;
+        "
+      > -->
+      <div class="search-section">
+        <div id="location-input search-item" style="padding: 5px">
+          <div class="search-text">Location</div>
+          <input
+            style="border: none; outline: none"
+            type="text"
+            id="location"
+            placeholder="Where are you going?"
+          />
         </div>
+        <div class="vertical-line" style="padding: 0"></div>
+        <div id="checkin-input search-item">
+          <div class="search-text">Check in</div>
+          <input
+            style="border: none; outline: none"
+            type="text"
+            id="checkin"
+            placeholder="Add dates"
+          />
+        </div>
+        <div class="vertical-line" style="padding: 0"></div>
+        <div id="checkout-input search-item">
+          <div class="search-text">Check out</div>
+          <input
+            style="border: none; outline: none"
+            type="text"
+            id="checkout"
+            placeholder="Add dates"
+          />
+        </div>
+        <div class="vertical-line" style="padding: 0"></div>
+        <div id="guests-input search-item">
+          <div class="search-text">Guests</div>
+          <input
+            style="border: none; outline: none"
+            type="text"
+            id="guests"
+            placeholder="Add guests"
+          />
+        </div>
+        <div class="material-icons custom-search">search</div>
       </div>
+      <!-- </div> -->
 
       <div class="hero">
         <div class="hero-inner-text">
@@ -197,20 +212,76 @@
 
     <section class="section-2">
       <div class="inspiration">
-        <div class="inspiration-text">Inspiration for your next trip</div>
+        <div class="inspiration-text">
+          <h1>Inspiration for your next trip</h1>
+        </div>
         <div class="cities">
-          <div class="d-flex flex-column">
-            <div
-              style="
-                height: 200px;
-                background: url(https://s3-alpha-sig.figma.com/img/195c/50aa/cae1ce853bfa8491397366bd39ab1c07?Expires=1698019200&Signature=ibTF6ZyA8mh8AEqth-Irl5S0AhaJrkfHJrhacJ9V-wwAConYaXVDGGUnLUt8k~RIq0wMf1BVebsTNsF0acy~ukiIBHeJfe3cM82uT4gNHugQoVJ14GENtHBdl1rntKskXE7A52UN3uV9go86mxp5AxlZLMHD6RtOWXY0Wq1mWN4N7Ar2y0YT6ZkqRehpK-xW-UQo2DSh2Ls6m5NgK-davAYQbo5I6g6dvHuAG~VEI667KAWK9stXGZx9Gp~mGNeIPKz8xMdpDWrLYHVgsaf43qhcaAugBCry0D3hZiK4LEUgRRG2W9ISRFBE86ZHwUD0kH5UwpZoz~1pJ649q6qL7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
-                align-self: stretch;
-              "
-            ></div>
+          <div class="city-card">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/195c/50aa/cae1ce853bfa8491397366bd39ab1c07?Expires=1698019200&Signature=ibTF6ZyA8mh8AEqth-Irl5S0AhaJrkfHJrhacJ9V-wwAConYaXVDGGUnLUt8k~RIq0wMf1BVebsTNsF0acy~ukiIBHeJfe3cM82uT4gNHugQoVJ14GENtHBdl1rntKskXE7A52UN3uV9go86mxp5AxlZLMHD6RtOWXY0Wq1mWN4N7Ar2y0YT6ZkqRehpK-xW-UQo2DSh2Ls6m5NgK-davAYQbo5I6g6dvHuAG~VEI667KAWK9stXGZx9Gp~mGNeIPKz8xMdpDWrLYHVgsaf43qhcaAugBCry0D3hZiK4LEUgRRG2W9ISRFBE86ZHwUD0kH5UwpZoz~1pJ649q6qL7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              height="200px"
+            />
+            <div class="city-content">
+              <h1>Nashville</h1>
+              <h3>53 miles away</h3>
+            </div>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="city-card" style="background-color: #bc1a6e">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/25c4/d100/703fbc6a52d0ce61cdbfd22b50b3e4a4?Expires=1698019200&Signature=EHJNx-R25nMVi5jG-Cuo8RoswrWutx6S0x47HsyCGhei5unBY9c49BOgMBbKwpYyNfwSRhqdR-ZlK0ZFqoGgTTRF0rZMWGrOmMHq3kgJWKf1U-yaQ-dw3ue7-hfQQr062yyb4Y2iItHXj2ZNeC-hFJX4ai-leVhSv5QDXZ-MOZV2z8R0dMogeQusKIN87JYyWRnEbYPunz9Kowyvbk60Wiont9qBZHoh4VvObhye4sxTj8KRZZW323hTep76zILSzjD4FzYLLRRVFhQGjgLDHkXNcu1PUEA0CHmlYsgPKpsRgc7XRu1BCfDgWwxrAUd9FxuedGD5Qb3m5JYzkbyd6Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              height="200px"
+            />
+            <div class="city-content">
+              <h1>South Haven</h1>
+              <h3>168 miles away</h3>
+            </div>
+          </div>
+          <div class="city-card" style="background-color: #de3151">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2505/45ae/0f2fb4717faf2770cbcd7be3562f9696?Expires=1698019200&Signature=iJ-H9YrXFmdEj0WIkyiUBIB0zG3hzDp9qhMKsFAQElsgEzEEzsKe0O5AMFYsIuvssj6EL8PuQ6J3Un8mmS3gCgwIY~JXgxTIgIHkWrMNCWBghTGr2Oayjzs2uN-xFDyudXVENmbCVunMILGC88t1Oy8~KWevQ-55TXR4M63pIsISIo9brpUlaI0l3BV8Leij~nk9tONwRs0SYuz-a6FapMUMfq5COjVGzrG-WhGO5RqPOhD6kKpyPD7z1oWqHC3bSQyrGGg4VQGj9GXAxgRgqYasfZzf9dkB04kZGkTAsx-KqnoiMdZa5f41LfB2WbENyzzqf-n0jVa7Z3Rvl74~5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              height="200px"
+            />
+            <div class="city-content">
+              <h1>Stanton</h1>
+              <h3>192 miles away</h3>
+            </div>
+          </div>
+          <div class="city-card" style="background-color: #d93b30">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/25c4/d100/703fbc6a52d0ce61cdbfd22b50b3e4a4?Expires=1698019200&Signature=EHJNx-R25nMVi5jG-Cuo8RoswrWutx6S0x47HsyCGhei5unBY9c49BOgMBbKwpYyNfwSRhqdR-ZlK0ZFqoGgTTRF0rZMWGrOmMHq3kgJWKf1U-yaQ-dw3ue7-hfQQr062yyb4Y2iItHXj2ZNeC-hFJX4ai-leVhSv5QDXZ-MOZV2z8R0dMogeQusKIN87JYyWRnEbYPunz9Kowyvbk60Wiont9qBZHoh4VvObhye4sxTj8KRZZW323hTep76zILSzjD4FzYLLRRVFhQGjgLDHkXNcu1PUEA0CHmlYsgPKpsRgc7XRu1BCfDgWwxrAUd9FxuedGD5Qb3m5JYzkbyd6Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              height="200px"
+            />
+            <div class="city-content">
+              <h1>New Buffalo</h1>
+              <h3>130 miles away</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiences">
+        <div class="experiences-text"><h1>Discover Airbnb Experiences</h1></div>
+        <div class="experiences-img">
+          <div class="img1">
+            <div class="experiences-img-content">
+              <h1>Things to do on your trip</h1>
+              <div class="experiences-button btn btn-light">
+                <h1>Experiences</h1>
+              </div>
+            </div>
+          </div>
+          <div class="img2">
+            <div class="experiences-img-content">
+              <h1>Things to do on your trip</h1>
+              <div class="experiences-button btn btn-light">
+                <h1>Experiences</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
