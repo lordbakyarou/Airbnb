@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="76x76"
+      type="image/x-icon"
+      href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section
+      style="background-color: black; padding-left: 80px; padding-right: 80px"
+      class="section-1"
+    >
+      <nav class="navbar navbar-expand-lg" style="padding-top: 16px">
+        <a href="" class="navbar-brand">
+          <img src="Vector.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarcollapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-center"
+          id="navbarcollapse"
+        >
+          <ul class="navbar-nav" style="gap: 32px">
+            <li class="nav-item">
+              <a href="" class="nav-link">Places to stay</a>
+            </li>
+            <li><a href="" class="nav-link">Experiences</a></li>
+            <li><a href="" class="nav-link">Online Experiences</a></li>
+          </ul>
+        </div>
+
+        <div class="">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a href="" class="nav-link">Become a Host</a>
+            </li>
+            <li>
+              <a href="" class="nav-link d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 12H19"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <div class="profile">
+                <a href="" class="menu-button d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.75 5.75H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.75 18.25H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.75 12H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <div class="material-icons">account_circle</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div style="display: flex; justify-content: center; padding: 20px 0px">
+        <div class="search-section">
+          <div id="location-input search-item" style="padding: 5px">
+            <div class="search-text">Location</div>
+            <input
+              style="border: none; outline: none"
+              type="text"
+              id="location"
+              placeholder="Where are you going?"
+            />
+          </div>
+          <div class="vertical-line" style="padding: 0"></div>
+          <div id="checkin-input search-item">
+            <div class="search-text">Check in</div>
+            <input
+              style="border: none; outline: none"
+              type="text"
+              id="checkin"
+              placeholder="Add dates"
+            />
+          </div>
+          <div class="vertical-line" style="padding: 0"></div>
+          <div id="checkout-input search-item">
+            <div class="search-text">Check out</div>
+            <input
+              style="border: none; outline: none"
+              type="text"
+              id="checkout"
+              placeholder="Add dates"
+            />
+          </div>
+          <div class="vertical-line" style="padding: 0"></div>
+          <div id="guests-input search-item">
+            <div class="search-text">Guests</div>
+            <input
+              style="border: none; outline: none"
+              type="text"
+              id="guests"
+              placeholder="Add guests"
+            />
+          </div>
+          <div class="material-icons custom-search">search</div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="hero-inner-text">
+          <div class="hero-heading">Not sure where to go? Perfect.</div>
+          <div class="hero-button">
+            <span id="text-button">i'm flexible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="inspiration">
+        <div class="inspiration-text">Inspiration for your next trip</div>
+        <div class="cities">
+          <div class="d-flex flex-column">
+            <div
+              style="
+                height: 200px;
+                background: url(https://s3-alpha-sig.figma.com/img/195c/50aa/cae1ce853bfa8491397366bd39ab1c07?Expires=1698019200&Signature=ibTF6ZyA8mh8AEqth-Irl5S0AhaJrkfHJrhacJ9V-wwAConYaXVDGGUnLUt8k~RIq0wMf1BVebsTNsF0acy~ukiIBHeJfe3cM82uT4gNHugQoVJ14GENtHBdl1rntKskXE7A52UN3uV9go86mxp5AxlZLMHD6RtOWXY0Wq1mWN4N7Ar2y0YT6ZkqRehpK-xW-UQo2DSh2Ls6m5NgK-davAYQbo5I6g6dvHuAG~VEI667KAWK9stXGZx9Gp~mGNeIPKz8xMdpDWrLYHVgsaf43qhcaAugBCry0D3hZiK4LEUgRRG2W9ISRFBE86ZHwUD0kH5UwpZoz~1pJ649q6qL7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+                align-self: stretch;
+              "
+            ></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
