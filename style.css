@@ -263,3 +263,95 @@ li > a {
   width: 43vw;
   border-radius: 8px;
 }
+
+.shop h1 {
+  color: var(--black, #000);
+  /* text-5xl/Medium */
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.shop-card {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.shop div {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--black, #000);
+  box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+  color: var(--white, #fff);
+  /* text-base/Medium */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  width: fit-content;
+}
+
+.shop-img img {
+  width: 854.223px;
+  height: 320px;
+}
+
+.hosting {
+  display: flex;
+  height: 640px;
+  /* padding: 80px; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 8px;
+  background: url(https://s3-alpha-sig.figma.com/img/5ed8/a779/efd4d7b308f8c6bdd6b801b638cc68d2?Expires=1698019200&Signature=Xkwkmys7h0-2eHZ5XyO2MMw6vxWnhatMzROXAUikcnsNEorffAS3rvGRnerr8Fdno-5ka31EOr47m73-oXmFPmLNptXwd8SeAMut-ZT7KWP~iF2M8f8dRo~7WRjxDerXDxGzuQy0hjW4XMAMnkDiKtbctXbxB0P1nL~JCHuNZm2xpqc9-tvrhWsBLtvCcN25KOvN6nARHX~JA1QDzXU62KyLysutK9ulD6eWc6TPl15WI0rvVBBAcqm2xIVL-BMseq63u~TuhoU05JDiC4XRwGZ17L6nOTvjz5YY7o2lUVkwxhhxvEpJycGXodyNf641vlFGBjJ6d25DisfU~oIcPg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
+    lightgray 0px -773.154px / 100% 300% no-repeat;
+  background-position: center;
+}
+
+.hosting-content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  justify-content: space-between;
+  /* gap: 180px; */
+  height: 100vh;
+}
+
+.hosting-heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px;
+  /* padding-inline: 80px; */
+}
+
+#hosting-button {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 0px solid var(--gray-200, #e5e7eb);
+  background: var(--white, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+  width: fit-content;
+}
