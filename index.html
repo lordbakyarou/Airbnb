@@ -28,18 +28,8 @@
     ></script>
   </head>
   <body>
-    <section
-      style="
-        background-color: black;
-        padding-left: 80px;
-        padding-right: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      "
-      class="section-1"
-    >
-      <nav class="navbar navbar-expand-lg" style="padding-top: 16px">
+    <section class="section-1">
+      <nav class="navbar navbar-expand-lg" style="padding: 0">
         <a href="" class="navbar-brand">
           <img src="Vector.png" alt="" />
         </a>
@@ -377,7 +367,7 @@
               <span>Scarborough</span> <span>England</span>
             </div>
 
-            <div class="individual-city">
+            <div class="individual-city show-more">
               <span
                 style="
                   color: var(--black, #000);
@@ -386,12 +376,29 @@
                   font-style: normal;
                   font-weight: 500;
                   line-height: 20px; /* 142.857% */
-                  text-decoration-line: underline;
-                  /* width: 302px; */
-                  text-underline-offset: 0.3em;
                 "
-                >Show more</span
-              >
+                >Show more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    fill: none;
+                    height: 12px;
+                    width: 12px;
+                    stroke: currentcolor;
+                    stroke-width: 5.33333;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    fill="none"
+                    d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"
+                  ></path>
+                </svg>
+              </span>
             </div>
           </div>
         </div>
@@ -399,7 +406,10 @@
     </section>
     <footer>
       <div class="footer" style="">
-        <div class="" style="display: flex; flex-direction: column">
+        <div
+          class="footer-element"
+          style="display: flex; flex-direction: column"
+        >
           <div class="row">
             <div class="col heading">Support</div>
             <div class="col heading">Community</div>
@@ -426,7 +436,7 @@
           </div>
           <div class="row">
             <div class="col">Our COVID-19 Response</div>
-            <div class="col">Combating discriminatino</div>
+            <div class="col">Combating discrimination</div>
             <div class="col">Visit our community forum</div>
             <div class="col">Careers</div>
           </div>

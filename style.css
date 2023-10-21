@@ -9,7 +9,14 @@
 
 .section-1 {
   background-color: black;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
   height: 100vh;
+  padding-top: 16px;
+  padding-bottom: 90px;
 }
 
 .custom-navbar {
@@ -43,9 +50,10 @@ li > a {
   padding: 8px 8px 8px 32px;
   align-items: center;
   gap: 32px;
-  /* width: 100vw; */
+  width: fit-content;
   margin: 10px 0px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  align-self: center;
 }
 
 .custom-search {
@@ -58,6 +66,11 @@ li > a {
   color: white;
 
   display: flex;
+}
+
+.custom-search:hover {
+  background: #de3151e9;
+  cursor: pointer;
 }
 
 .search-item {
@@ -78,8 +91,8 @@ li > a {
 
 .hero {
   display: flex;
-  height: 640px;
-  padding: 80px;
+  /* height: 100%; */
+  margin-top: 24px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -88,6 +101,8 @@ li > a {
   border-radius: 8px;
   background: url(https://s3-alpha-sig.figma.com/img/8021/96a6/83d8b4f496c94cf0a33728d8f6e90e4b?Expires=1698019200&Signature=XRATJGKLkQOHOHcmyoytdRJZcJrhBvmxgICawWEO3X-UqhaYLffTWKJ6rrNDjY9suN40lskZCTVDVh7jbsOZTapi3QQ3eIlBlLwq0zpiQxag1kZrZdUJzfOlIhbZUnVHNTt93TgUURtVD4W42e697zYrZBuQ0nABq6t6VK9PEWQdvmNvNKITztYi7-PJSfTOc5MjcbjptLUEjOdCI69rDxV6kdYFcT2Vihdi-WMDE6QOV10CzC0lbrr2LuoHeGkq5MxR3xtLd~1MGBa3YAjRZT5to3wsWoAhv1SKl4DXpyup11eRVD4vSIcGAQKuEsvvbBh2qszjRvrz6UcRTbOzdg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
     lightgray 0px -209.751px / 100% 133.359% no-repeat;
+  /* background-size: auto 100%; */
+  flex: 1;
 }
 
 .hero-inner-text {
@@ -97,6 +112,7 @@ li > a {
   justify-content: flex-end;
   align-items: center;
   gap: 24px;
+  padding-bottom: 80px;
 }
 
 .hero-heading {
@@ -118,6 +134,11 @@ li > a {
   padding: 16px 24px;
   border-radius: 100px;
   color: transparent;
+}
+
+.hero-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.873);
 }
 
 #text-button {
@@ -322,6 +343,7 @@ li > a {
   background: url(https://s3-alpha-sig.figma.com/img/5ed8/a779/efd4d7b308f8c6bdd6b801b638cc68d2?Expires=1698019200&Signature=Xkwkmys7h0-2eHZ5XyO2MMw6vxWnhatMzROXAUikcnsNEorffAS3rvGRnerr8Fdno-5ka31EOr47m73-oXmFPmLNptXwd8SeAMut-ZT7KWP~iF2M8f8dRo~7WRjxDerXDxGzuQy0hjW4XMAMnkDiKtbctXbxB0P1nL~JCHuNZm2xpqc9-tvrhWsBLtvCcN25KOvN6nARHX~JA1QDzXU62KyLysutK9ulD6eWc6TPl15WI0rvVBBAcqm2xIVL-BMseq63u~TuhoU05JDiC4XRwGZ17L6nOTvjz5YY7o2lUVkwxhhxvEpJycGXodyNf641vlFGBjJ6d25DisfU~oIcPg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
     lightgray 0px -773.154px / 100% 300% no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hosting-content {
@@ -507,4 +529,39 @@ li > a {
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   align-self: stretch;
+}
+
+.footer-element > .row :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-element :first-child :hover {
+  text-decoration: none;
+  cursor: auto;
+}
+
+.des,
+.individual-city :hover {
+  cursor: pointer;
+}
+
+.show-more:hover {
+  text-decoration-line: underline;
+  /* width: 302px; */
+  text-underline-offset: 0.3em;
+}
+
+.kicker-first > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.kicker-first :first-child:hover {
+  text-decoration: none;
+  cursor: auto;
+}
+
+.kicker-last > span:hover {
+  cursor: pointer;
 }
