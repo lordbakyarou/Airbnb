@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="searchStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="76x76"
+      type="image/x-icon"
+      href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="section-1">
+      <nav
+        class="navbar navbar-expand-lg justify-content-between"
+        style="padding: 0"
+      >
+        <a href="" class="navbar-brand">
+          <img src="VectorRed.png" alt="" />
+        </a>
+
+        <div class="d-flex airbnb-search">
+          <ul class="navbar-nav align-items-center" style="gap: 16px">
+            <li class="nav-item">
+              <a href="" class="nav-link">Place</a>
+            </li>
+            <li class="vertical-line" style="padding: 0"></li>
+
+            <li><a href="" class="nav-link">Feb 19-26</a></li>
+
+            <li class="vertical-line" style="padding: 0"></li>
+
+            <li><a href="" class="nav-link">2 Guest</a></li>
+            <div class="material-icons custom-search">search</div>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a href="" class="nav-link">Become a Host</a>
+            </li>
+            <li>
+              <a href="" class="nav-link d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 12H19"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <div class="profile">
+                <a href="" class="menu-button d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.75 5.75H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.75 18.25H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.75 12H19.25"
+                      stroke="#111827"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <div class="material-icons">account_circle</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="filters">
+        <div class="left">
+          <div class="button-base">
+            <span>Price</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M12.7083 8.95825L10 11.8749L7.29167 8.95825"
+                stroke="#374151"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="button-base">
+            <span>Type of place</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M12.7083 8.95825L10 11.8749L7.29167 8.95825"
+                stroke="#374151"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="right">
+          <div class="d-flex right-filters">
+            <div class="button-base">
+              <span>Free cancellation</span>
+            </div>
+            <div class="button-base">
+              <span>Wifi</span>
+            </div>
+            <div class="button-base">
+              <span>Kitchen</span>
+            </div>
+            <div class="button-base">
+              <span>Air conditioning</span>
+            </div>
+            <div class="button-base">
+              <span>Washer</span>
+            </div>
+            <div class="button-base">
+              <span>Iron</span>
+            </div>
+            <div class="button-base">
+              <span>Dedicated workspace</span>
+            </div>
+            <div class="button-base">
+              <span>Free parking</span>
+            </div>
+            <div class="button-base">
+              <span>Dryer</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="button-base">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M3.95837 6.66675H6.04171"
+                  stroke="#374151"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.625 6.66675H16.0417"
+                  stroke="#374151"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.95837 13.3333H10.2084"
+                  stroke="#141414"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.7916 13.3333H16.0416"
+                  stroke="#141414"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.2084 6.66675C10.2084 7.70228 9.36891 8.54175 8.33337 8.54175C7.29784 8.54175 6.45837 7.70228 6.45837 6.66675C6.45837 5.63121 7.29784 4.79175 8.33337 4.79175C9.36891 4.79175 10.2084 5.63121 10.2084 6.66675Z"
+                  stroke="#141414"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.375 13.3333C14.375 14.3688 13.5355 15.2083 12.5 15.2083C11.4645 15.2083 10.625 14.3688 10.625 13.3333C10.625 12.2977 11.4645 11.4583 12.5 11.4583C13.5355 11.4583 14.375 12.2977 14.375 13.3333Z"
+                  stroke="#141414"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Filters</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="listings" id="listings" style="width: 60%">
+        <h3 class="number-of-hotels">200+ stays in Bordeaux</h3>
+
+        <div class="divider"></div>
+      </div>
+      <div class="map">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/ade3/236f/1de6dbeb8ee2c0da47457eae6f331682?Expires=1700438400&Signature=HnRUMk3qVnm0-54eoMA96rOcS4VUBH6bToJlxw~BkZX2Ergem1NtSanU9wEUA07LowcPP6W-0NaCeN2dMrLyg9HRH26oPlqjOX1WH1lzd8-jzOL-HBM1OLPMz3k~2geaoTJKZp1vV2D9V49iuFZyvAb4Q5PkQ9Y0A1w6gZnZxNnTyPdyWpiLBy5QH-qcYYNEhFw5Amf9gtPUcP8puQAL2hrhw0h9MiJ1iX83j2yDxcdh1wNZIsUGGYcdjgviNAY~LcoWNEA3MviyPTd6zTzUxUz--hKdJZxaontljhgGhBtY71tD7CTBYLxCuLD5YzTi~lnp5HxH5GJhP5wVfpQ2MQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt=""
+          width="100%"
+        />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
